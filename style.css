@@ -12,22 +12,23 @@ body {
   padding: 0 2rem;
 }
 
-.navbar {
+.header {
   padding-top: 1.5rem;
+  height: 80px;
 }
 
-.navbar__left {
+.header__left {
   width: 900px;
   float: left;
   display: flex;
   align-items: center;
 }
 
-.navbar img {
+.header img {
   width: 100px;
 }
 
-.navbar__search {
+.header__search {
   display: inline-block;
   width: 40rem;
   height: 2.8rem;
@@ -37,7 +38,7 @@ body {
   border: 1px solid rgba(194, 194, 194, 0.493);;
 }
 
-.navbar__search-bar {
+.header__search-bar {
   width: 88%;
   border: 0;
   height: 100%;
@@ -55,48 +56,48 @@ body {
   color: blue;
 }
 
-.navbar__search-bar:focus {
+.header__search-bar:focus {
   outline: none;
 }
 
-.navbar__search:hover {
+.header__search:hover {
   box-shadow: .1px .1px 3.4px rgba(0, 0, 0, 0.397)
 }
 
-.navbar__right {
+.header__right {
   width: 200px;
   height: 50px;
   float: right;
 }
 
-.navbar__list {
+.header__list {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
 }
 
-.navbar__list img {
+.header__list img {
   width: 32px;
   padding-top: .2rem;
 }
 
-.navbar__item {
+.header__item {
   list-style: none;
   margin-left: 1rem;
 
 }
 
-.navbar__link {
+.header__link {
   display: inline-block;
   position: relative;
 }
 
-.navbar__link:hover .navbar__back {
+.header__link:hover .header__back {
   opacity: 1;
 }
 
-.navbar__back {
+.header__back {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -109,7 +110,7 @@ body {
   opacity: 0;
 }
 
-.navbar__nine-dots {
+.header__nine-dots {
   display: inline-grid;
   grid-template-columns: repeat(3, 6px);
   grid-template-rows: repeat(3, 6px);
@@ -118,7 +119,7 @@ body {
   padding-bottom: .4rem;
 }
 
-.navbar__nine-dots div {
+.header__nine-dots div {
   width: 4px;
   height: 4px;
   background-color: rgb(43, 43, 43);
@@ -126,6 +127,59 @@ body {
 }
 
 
-.navbar__profile {
+.header__profile {
   border-radius: 50%;
+}
+
+.navbar {
+  width: 630px;
+  height: 42px;
+  margin-left: 160px;
+  display: flex;
+  color: #5f6368;
+  font-weight: 400;
+}
+
+.navbar__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar__box i {
+  margin: 0 .5rem;
+  color: #5f6368;
+}
+.navbar__title {
+  margin-right: 1rem;
+}
+.active {
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.navbar__right p {
+  padding: .7rem;
+  border: 1px solid transparent;
+}
+
+.navbar__right p:last-child:hover {
+  background-color: #f8f8f8;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+  border-radius: 2px;
+  border: 1px solid #c6c6c6;
+}
+
+.container {
+  width: 100%;
+  height: 700px;
+  background-color: skyblue;
 }

@@ -10,21 +10,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar__left">
-      <img src="img/googlelogo_color_92x30dp.png" alt="google-logo">
-      <div class="navbar__search">
-        <input type="search" class="navbar__search-bar">
+  <nav class="header">
+    <div class="header__left">
+      <a href="#"><img src="img/googlelogo_color_92x30dp.png" alt="google-logo"></a>
+      <div class="header__search">
+        <input type="search" class="header__search-bar">
         <i class="fa fa-microphone" aria-hidden="true"></i>
         <i class="fa fa-search"></i>
       </div>
     </div>
-    <div class="navbar__right">
-      <ul class="navbar__list">
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">
-            <span class="navbar__back"></span>
-            <div class="navbar__nine-dots">
+    <div class="header__right">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">
+            <span class="header__back"></span>
+            <div class="header__nine-dots">
               <div></div>
               <div></div>
               <div></div>
@@ -37,14 +37,52 @@
             </div>
           </a>
         </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link">
-            <span class="navbar__back"></span>
-            <img class="navbar__profile" src="img/ADGmqu_CCvuMZUayKvsKnexTfN6IAneNnICDhwk9amZi=s32-c-mo" alt="my profile pic">
+        <li class="header__item">
+          <a href="#" class="header__link">
+            <span class="header__back"></span>
+            <img class="header__profile" src="img/ADGmqu_CCvuMZUayKvsKnexTfN6IAneNnICDhwk9amZi=s32-c-mo" alt="my profile pic">
           </a>
         </li>
       </ul>
     </div>
   </nav>
+
+  <div class="navbar">
+    <div class="navbar__box active">
+      <i class="fa fa-search"></i>
+      <p class="navbar__title">All</p>
+    </div>
+    <div class="navbar__box">
+      <i class="fa fa-map-marker"></i>
+      <p class="navbar__title">Maps</p>
+    </div>
+    <div class="navbar__box">
+      <i class="fa fa-newspaper-o"></i>
+      <p class="navbar__title">News</p>
+    </div>
+    <div class="navbar__box">
+      <i class="fa fa-vimeo-square"></i>
+      <p class="navbar__title">Videos</p>
+    </div>
+    <div class="navbar__box">
+      <i class="fa fa-picture-o"></i>
+      <p class="navbar__title">Images</p>
+    </div>
+    <div class="navbar__box">
+      <i class="fa fa-ellipsis-v"></i>
+      <p class="navbar__title">More</p>
+    </div>
+
+    <div class="navbar__right">
+      <p>Settings</p>
+      <p>Tools</p>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="content">
+
+    </div>
+  </main>
 </body>
 </html>

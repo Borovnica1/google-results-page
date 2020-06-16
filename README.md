@@ -1,4 +1,4 @@
-#! Short Desc
+# Short Desc
 
 This project is the part of Odin FullStack JavaScript course.
 
