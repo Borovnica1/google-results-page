@@ -9,6 +9,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: .8rem;
+  position: relative;
 }
 
 .header {
@@ -181,7 +182,6 @@ body {
 
 .container {
   width: 100%;
-  height: 1400px;
   border-top: 1px solid rgba(201, 201, 201, 0.493);
   padding: 0 1rem;
 }
@@ -297,4 +297,41 @@ body {
 
 .content__page .content__page-last {
   text-align: end;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #929292;
+}
+
+.footer__location h4 {
+  padding: 0 .4rem;
+}
+
+.footer > * {
+  border-top: 1px solid #e4e4e4;
+  padding: .7rem 10rem;
+}
+
+.footer__marketing {
+  margin-bottom: 1rem;
+}
+
+.footer__left {
+  float: left;
+}
+
+
+.footer__item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 .4rem;
+}
+
+.footer__link {
+  color: rgb(87, 87, 87);
 }
